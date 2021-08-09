@@ -87,21 +87,3 @@ In order to get pictures from web cam, you may need to uninstall your cv2 and [i
 ```bash
 python demo.py 
 ```
-
-## TODO
-- [x] First version of project
-- [x] Code review and add some commits
-- [x] Add a readme doc
-- [x] Add a demo using pictures from web cam
-
-
-
-## References and Acknowledgments
-This project is a part of my class project of Machine Learning course at Zhejiang University,following papers and codes are referred:
-
-1. Rothe R, Timofte R, Van Gool L. Dex: Deep expectation of apparent age from a single image[C]//Proceedings of the IEEE International Conference on Computer Vision Workshops. 2015: 10-15.
-2. Rothe R, Timofte R, Van Gool L. Deep expectation of real and apparent age from a single image without facial landmarks[J]. International Journal of Computer Vision, 2016: 1-14.
-3. [IMDB-WIKI – 500k+ face images with age and gender labels](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/)
-4. [yu4u/age-gender-estimation](https://github.com/yu4u/age-gender-estimation)
-5. [davidsandberg/facenet](https://github.com/davidsandberg/facenet)
-6. [Face Alignment with OpenCV and Python](https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/)
