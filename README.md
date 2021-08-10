@@ -39,7 +39,7 @@ Once you have converted images to tfrecords,you should have the following path:
 /path/to/project/data/test/test-000.tfrecords  
 ......
  
- At present,our deep CNN uses FaceNet architecture,which based on inception-resnet-v1 to extract features.To speed up training,we use the pretrained model's weight from [this project](https://github.com/davidsandberg/facenet) and have converted the weight to adapt our model,you can download this converted pretrained facenet weight checkpoint from [here](https://mega.nz/#!4G4yxbAL!D9QG48yzCeFegCFhZfpCgOyLYbfDdU6lt2k2kK9n23g) or [here](https://pan.baidu.com/s/1dFewgqH).Extract it to path **models**.
+ At present,our deep CNN uses FaceNet architecture,which based on inception-resnet-v1 to extract features.To speed up training,we use the pretrained model's weight from [this project](https://github.com/davidsandberg/facenet) and have converted the weight to adapt our model,you can download this converted pretrained facenet weight checkpoint from [here](https://drive.google.com/file/d/1ZT0oeJKh19gdcEUaoXGUOBjeMypaf550/view?usp=sharing). Extract it to path **models**.
  > /path/to/project/models/checkpoint  
  /path/to/project/models/model.ckpt-0.data-00000-of-00001  
  /path/to/project/models/model.ckpt-0.index  
@@ -57,7 +57,6 @@ Using tensorboard to visualize learning
 ```
 tensorboard --logdir=./train_log
 ```
-![train log](https://raw.githubusercontent.com/BoyuanJiang/Age-Gender-Estimate-TF/master/train_log/train_log.jpg)
 ### Test model
 You can test all your trained models on testset through
 ```
@@ -74,11 +73,11 @@ If you just want to test the model on your own picture,run
 python eval.py --I "./demo/demo.jpg" --M "./models/" --font_scale 1 --thickness 1
 ```
 Flag **--I** tells where your picture is.If the text label too small or too large on the picture,you can use a different **--font_scale 1** and **--thickness 1** to adjust the text size and thickness.
-We also provide a pretrained model,you can download from [here](https://mega.nz/#!BfglkI7A!YBvFyxgKhvUnnNRu9FL-ACjdo18SmOZ-YSz9QghQRzE) or [here](https://pan.baidu.com/s/1bpllJg7) and extract it to **models** path.
+We also provide a pretrained model,you can download from [here](https://drive.google.com/file/d/16s-Ku1FbeVZyUQhEsvlbTi9hfyhvVmGK/view?usp=sharing) and extract it to **models** path.
 
 ### Picture from web cam
 
-First download the pretrained model from [here](https://mega.nz/#!kaZkWDjb!xQvWi9B--FgyIPtIYfjzLDoJeh2PUBEZPotmzO9N6_M) or [here](https://pan.baidu.com/s/1kVd3TNx) and extract to **models** path.
+First download the pretrained model from [here](https://drive.google.com/file/d/1df5h2_KczLajGF9ZavaYxH-cSpGv3CUb/view?usp=sharing) and extract to **models** path.
 In order to get pictures from web cam, you may need to uninstall your cv2 and [install it from source](https://www.scivision.co/anaconda-python-opencv3/) if have problems when running the below command:
 ```bash
 python demo.py 
