@@ -2,15 +2,12 @@
 
 ---
 
-**UPDATE: There are some compatibility issues under python3 reported by others, recommend using python2 or you should adjust some codes manually**
-
 This is a TensorFlow implement of face age and gender estimation which first using dlib to detect and align faces in the picture and then using a deep CNN to estimate age and gender.As you can see below,this project can estimate more than one face in a picture at one time.
 
-![demo1](https://raw.githubusercontent.com/BoyuanJiang/Age-Gender-Estimate-TF/master/demo/demo1.jpg)
 ![demo2](https://raw.githubusercontent.com/BoyuanJiang/Age-Gender-Estimate-TF/master/demo/demo2.jpg)
 
 ## Dependencies
-This project has following dependencies and tested under CentOS7 with Python2.7.14
+This project has following dependencies and tested under CentOS7 with Python 3.6
 
 - tensorflow==1.4
 - dlib==19.7.99
@@ -80,7 +77,6 @@ Flag **--I** tells where your picture is.If the text label too small or too larg
 We also provide a pretrained model,you can download from [here](https://mega.nz/#!BfglkI7A!YBvFyxgKhvUnnNRu9FL-ACjdo18SmOZ-YSz9QghQRzE) or [here](https://pan.baidu.com/s/1bpllJg7) and extract it to **models** path.
 
 ### Picture from web cam
-![web cam](https://raw.githubusercontent.com/BoyuanJiang/Age-Gender-Estimate-TF/master/demo/demo.gif)
 
 First download the pretrained model from [here](https://mega.nz/#!kaZkWDjb!xQvWi9B--FgyIPtIYfjzLDoJeh2PUBEZPotmzO9N6_M) or [here](https://pan.baidu.com/s/1kVd3TNx) and extract to **models** path.
 In order to get pictures from web cam, you may need to uninstall your cv2 and [install it from source](https://www.scivision.co/anaconda-python-opencv3/) if have problems when running the below command:
